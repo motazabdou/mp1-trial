@@ -1,17 +1,3 @@
-let checkbtn = document.querySelector(".checkbtn");
-
-checkbtn.addEventListener("click", function(){
-    document.querySelector(".nav-list").style.display="block";
-    document.querySelector(".nav-list").style.top="50px";
-    document.querySelector(".nav-list").style.right="0";
-
-    checkbtn.addEventListener("click", function(){
-    document.querySelector(".nav-list").style.right="-150vw";
-    });
-});
-
-
-
 $(".step").click( function() {
 	$(this).addClass("active").prevAll().addClass("active");
 	$(this).nextAll().removeClass("active");
@@ -29,7 +15,7 @@ $(".step02").click( function() {
 
 $(".step03").click( function() {
 	$("#line-progress").css("width", "50%");
-	$(".skill").addClass("active").siblings().removeClass("active");
+	$(".skills").addClass("active").siblings().removeClass("active");
 });
 
 $(".step04").click( function() {
@@ -39,5 +25,5 @@ $(".step04").click( function() {
 
 $(".step05").click( function() {
 	$("#line-progress").css("width", "100%");
-	$(".analysis").addClass("active").siblings().removeClass("active");
+	$(".aspirations").addClass("active").siblings().removeClass("active");
 });
